@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial SASS</title>
+    <link rel="stylesheet" href="estiloIndex.css">
+</head>
+<body>
+
+    <div class="main colorMain" id="main">
+
+        <div class="contenedor" id="contenedor"> 
+
+            <h1 id="h1" class="colorH1"></h1>
+            <button class="btn_color" onclick="cambiarColor()">Cambiar Color</button>
+            
+            <div class="botont_salir " id="boton_salir">
+                <button onclick="salir_pantalla()">Salir Full Screen</button>
+            </div>
+
+        </div>
+
+        
+
+    </div>
+
+    <div class="container">
+            
+        <button class="btn" onclick="var el = document.getElementById('main'); el.requestFullscreen(); document.getElementById('boton_salir').classList.add('salir_active');">
+          Pantalla Completa
+        </button>
+    
+    </div>
+    
+    
+    <script src="java.js"></script>
+    <script src="https://kit.fontawesome.com/530f126b4a.js" crossorigin="anonymous"></script>
+</body>
+</html>
